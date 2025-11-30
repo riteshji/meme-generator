@@ -1,0 +1,115 @@
+.image-selector {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #333;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  color: #888;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+}
+
+.tabs button:hover {
+  color: #fff;
+}
+
+.tabs button.active {
+  color: #fff;
+  border-bottom-color: #646cff;
+}
+
+.tab-content {
+  min-height: 200px;
+}
+
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.template-item {
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s;
+  background: #2a2a2a;
+}
+
+.template-item:hover {
+  border-color: #646cff;
+  transform: translateY(-2px);
+}
+
+.template-item.selected {
+  border-color: #646cff;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.3);
+}
+
+.template-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.template-item p {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #ccc;
+  margin: 0;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 2px dashed #444;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+.upload-button {
+  background: #646cff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.upload-button:hover {
+  background: #535bf2;
+}
+
+.upload-hint {
+  margin-top: 1rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
